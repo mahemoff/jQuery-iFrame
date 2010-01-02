@@ -1,5 +1,5 @@
-This is jQuery iFrame, a plugin to help you set iframe source and squirt HTML content into iframes, by Michael Mahemoff, under MIT License. It gives you a callback so you know when the frame has been loaded, tells you how long it took to load, and provides timeout support.
+This is jQuery iFrame, a plugin to help you set iframe source and squirt HTML content into iframes, by Michael Mahemoff, under MIT License. It gives you a callback so you know when the frame has been loaded, tells you how long it took to load, and provides timeout support. Full API and interactive demo at:
 
-<a href="http://project.mahemoff.com/jquery-iframe/">Detailed Docs and Demo Here</a>
+http://project.mahemoff.com/jquery-iframe/
 
 To use it, all you need is js/jquery.iframe.js
