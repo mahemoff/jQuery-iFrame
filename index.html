@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>JQuery IFrame Loader</title>
+    <script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.iframe.js" type="text/javascript"></script>
+    <script src="js/demo.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+	</head>
+	<body>
+    <div id="explanationWrapper">
+      <div id="explanation">
+        <h1>jQuery iFrame - A JQuery Plugin</h1>
+        <p>
+          This is jQuery iFrame, a plugin to help you set iframe source and squirt content into iframes, by <a href="http://softwareas.com">Michael Mahemoff</a>, under MIT License. It gives you a callback so you know when the frame has been loaded, tells you how long it took to load, and provides timeout support.
+        </p>
+
+        <a href="js/jquery.iframe.js" id="download"><div id="action">Download</div><div id="pluginName">jquery.iframe.js</div></a>
+
+        <h1>Demo</h1>
+
+        <div id="tableWrapper">
+          <table>
+            <tr><td class='label'>Load http://</td><td><input id="url" size="10" value="google.com"></td><td>&nbsp;</td></tr>
+            <tr><td class='label'>with&nbsp;timeout </td><td><input id="timeout" value="10000" size="10"> ms</td></tr>
+            <tr><td>&nbsp;</td><td colspan="3"><button id="load">Go!</button></td></tr>
+          </table>
+        </div>
+
+        <div id="status"></div>
+
+        <h1>API</h1>
+
+<code>
+$("iframe").src(url, optionalCallback, options);
+$("iframe").squirt(html, optionalCallback, options);
+</code>
+
+<p>Options are:</p>
+<ul>
+  <li><span class='option'>timeout</span> will be called some time (according to timeoutDuration) after the iframe started loading, if the iframe hasn't yet finished loading. Use "this" to access iFrame. (Note: If you want to abort loading on timeout, you should do it manually in this function, e.g. "this.src=null".)</li>
+  <li><span class='option'>timeoutDuration</span> Timeout duration, used in conjunction with options.timeout. (Defaults to 60000, i.e. one minute.)</li>
+</ul>
+
+<h1>Caveats</h1>
+
+<ul>
+  <li>Due to cross-domain restrictions, "squirt" can only be used with an iframe whose source is either null or pointing to the same domain as the parent document.</li>
+</ul>
+
+        <h1>Usage</h1>
+
+<pre><code>
+$("&lt;iframe/&gt;").src("http://google.com").appendTo("body");
+
+$("iframe").squirt("a &lt;em&gt;little&lt;/em&gt; content");
+
+$("iframe").src("http://google.com", function(iframe, duration) { 
+  alert("That took " + duration + " millis.");
+}, {
+  timeout: function() { alert("oops! timed out."); },
+  timeoutDuration: 10000
+});
+</code></pre>
+
+        </div>
+
+    </div>
+    <iframe></iframe>
+	</body>
+</html>

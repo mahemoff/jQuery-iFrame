@@ -1,0 +1,38 @@
+/* http://www.colourlovers.com/palette/580974/Adrift_in_Dreams */
+@import 'reset.css';
+body { font-family: Verdana, Arial, sans-serif; padding: 1em; width: 760px; margin: 0 auto; line-height: 1.2em; }
+h1 { margin: 1em 0; }
+
+#explanationWrapper {
+  width: 380px; padding: 0 10px; margin-right: 20px;
+  -moz-border-radius: 5px; -webkit-border-radius: 5px;
+  float: left; 
+  background: #c9fDcA; color: #0B486B; border: 1px solid #3B8686;
+  font-size: 14px; 
+}
+#explanation { padding: 20px; }
+
+iframe { border: 1px solid black; width: 330px; height: 900px; }
+
+a#download { margin: 0 0 1em; float: left; padding: 10px;
+             background: yellow; color: #0B486B; text-decoration: none; cursor: pointer;
+             border: 2px outset #3B8686;
+             -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+#action { font-weight: bold; font-size: 16px; cursor: pointer; }
+a#download #pluginName { font-size: 12px; font-family: "times new roman", times, serif; margin-top: 5px; cursor: pointer;  }
+
+p { margin: 1em 0; }
+code { overflow-x: auto; width: 360px; display: block; font-size: 12px; }
+
+#status { background: #A8DBA8; margin: 10px 0; padding: 10px; display: none; }
+
+h1 { clear: both; }
+
+table { text-align: left; table-collapse: collapse; display: block; margin: 0 auto; }
+td { padding: 2px; }
+td.label { text-align: right; }
+
+a, a:visited { color: #00f; text-decoration: none; }
+
+li { list-style-type: bullet; margin-top: 0.5em; }
+.option { background: #A8DBA8; padding: 2px; }

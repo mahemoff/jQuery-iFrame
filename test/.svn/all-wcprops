@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/11257/Trunk/contributors/MichaelMahemoff/plugins/AppFramePlugin/lib/test
+END
+qunit.css
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/11245/Trunk/contributors/MichaelMahemoff/plugins/AppFramePlugin/lib/test/qunit.css
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/11254/Trunk/contributors/MichaelMahemoff/plugins/AppFramePlugin/lib/test/index.html
+END
+apptest.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/11257/Trunk/contributors/MichaelMahemoff/plugins/AppFramePlugin/lib/test/apptest.js
+END
+qunit.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/11245/Trunk/contributors/MichaelMahemoff/plugins/AppFramePlugin/lib/test/qunit.js
+END
