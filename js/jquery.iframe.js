@@ -66,7 +66,7 @@
 
     var defaults = {
       timeoutDuration: 0,
-      timeout: null,
+      timeout: null
     }
     var opts = $.extend(defaults, options);
     if (opts.timeout && !opts.timeoutDuration) opts.timeoutDuration = 60000;
