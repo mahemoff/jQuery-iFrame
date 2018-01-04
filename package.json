@@ -1,0 +1,22 @@
+{
+  "name": "jquery-iframe",
+  "version": "0.1.0",
+  "description": "A jQuery plugin to help you set iframe source and squirt HTML content into iframes, with timing support",
+  "main": "js/jquery.iframe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avdeev/jQuery-iFrame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahemoff/jQuery-iFrame/issues"
+  },
+  "homepage": "https://github.com/mahemoff/jQuery-iFrame#readme",
+  "dependencies": {
+    "jquery": "^2.2.0"
+  }
+}

@@ -45,7 +45,7 @@
     setIFrames($(this), onLoad, options, function() {
       var doc = this.contentDocument || this.contentWindow.document;
       doc.open();
-      doc.writeln(content);
+      doc.write(content);
       doc.close();
     });
     return this;
@@ -75,7 +75,7 @@
     var startTime = (new Date()).getTime();
     if (opts.timeout) {
       var timer = setTimeout(function() {
-        opts.frameactive=false; 
+        opts.frameactive=false;
         iframe.onload=null;
         if (opts.timeout) opts.timeout(iframe, opts.timeout);
       }, opts.timeoutDuration);
@@ -91,7 +91,7 @@
     iframe.onload = onloadHandler;
     opts.completeReadyStateChanges=0;
     iframe.onreadystatechange = function() { // IE ftw
-	    if (++(opts.completeReadyStateChanges)==3) onloadHandler();
+      if (++(opts.completeReadyStateChanges)==3) onloadHandler();
     }
 
     return iframe;
